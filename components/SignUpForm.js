@@ -4,12 +4,19 @@ import { Input, Button } from 'react-native-elements'
 
 const SignUpForm = () => {
     const [phone, setPhone ] = useState('')
+
+    const handleSubmit = () => {
+        
+    }
+
     return (
         <View>
             <Input 
             label = 'Enter Phone Number' 
-            value= { phone }/>
-            <Button title ='Submit' />
+            value= { phone }
+            onChangeText= { setPhone }
+            />
+            <Button title ='Submit' onPress={() => handleSubmit }/>
         </View>
     )
 }
