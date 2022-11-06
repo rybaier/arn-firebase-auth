@@ -18,16 +18,6 @@ const SignUpForm = () => {
         }
     }
 
-// refactored to above 
-    // const handleSubmit = () => {
-    //     axios.post(`${ROOT_URL}/createUser` , {
-    //         phone: phone
-    //     })
-    //     .then(() => {
-    //         axios.post(`${ROOT_URL}/requestOneTimePassword`, { phone: phone })
-    //     })
-    
-    // }
     return (
         <View>
             <Input 
